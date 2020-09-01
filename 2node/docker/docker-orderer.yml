@@ -50,6 +50,6 @@ services:
     networks:
       - test
     extra_hosts:
-      - "orderer.example.com:18.216.12.129"
-      - "peer0.org1.example.com:3.14.127.48"
-      - "peer0.org2.example.com:3.131.151.219"
+      - "orderer.example.com:172.31.13.65"
+      - "peer0.org1.example.com:172.31.20.20"
+      - "peer0.org2.example.com:172.31.17.254"
