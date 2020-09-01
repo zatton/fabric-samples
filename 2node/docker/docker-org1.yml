@@ -46,6 +46,7 @@ services:
         - ../crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls:/var/hyperledger/tls
         - ../crypto-config/peerOrganizations/org1.example.com/users:/var/hyperledger/users
         - ../channel-artifacts/:/var/hyperledger/configs
+        - $GOPATH/src/github.com/hyperledger/fabric/:/opt/gopath/src/github.com/hyperledger/fabric/
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
     command: peer node start
     ports:
